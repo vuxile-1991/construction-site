@@ -211,6 +211,7 @@
 	width: 100%;
 	height: 100%;
 	background: transparent;
+	perspective: 1000px;
 }
 
 .card--header {
@@ -239,7 +240,7 @@
 
 .back {
 	background-color: var(--dark-blue);
-	transform: perspective(600px) rotateY(180deg);
+	transform: rotateY(180deg);
 	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 	box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
@@ -251,11 +252,11 @@
 }
 
 .card:hover > .front {
-	transform: perspective(600px) rotateY(-180deg);
+	transform: rotateY(-180deg);
 }
 
 .card:hover > .back {
-	transform: perspective(600px) rotateY(0deg);
+	transform: rotateY(0deg);
 }
 
 .btn--read-more {
