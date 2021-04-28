@@ -224,6 +224,7 @@
 	/* padding: 1rem; */
 	opacity: 1;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 	position: absolute;
 	transition: transform 0.4s linear;
 }
@@ -232,9 +233,9 @@
 	height: 50%;
 }
 
-.front {
+/* .front {
 	transform: perspective(600px) rotateY(0deg);
-}
+} */
 
 .back {
 	background-color: var(--dark-blue);
@@ -257,12 +258,7 @@
 	transform: perspective(600px) rotateY(0deg);
 }
 
-.card:hover > .btn--read-more {
-	display: block;
-}
-
 .btn--read-more {
-	display: none;
 	background-color: transparent;
 	color: var(--white);
 	border-radius: 2px;
