@@ -125,7 +125,7 @@
 	}
 
 	.sticky--nav {
-		display: flex !important;
+		display: none;
 		justify-content: center !important;
 		visibility: visible !important;
 		opacity: 1 !important;

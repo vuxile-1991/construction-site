@@ -312,10 +312,6 @@
 	background-size: cover;
 }
 
-.display-flex {
-	display: flex !important;
-}
-
 /* *Media Queries */
 
 @media screen and (max-width: 1440px) {
