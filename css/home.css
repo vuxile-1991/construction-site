@@ -310,6 +310,10 @@
 	background-size: cover;
 }
 
+.display-flex {
+	display: flex !important;
+}
+
 /* *Media Queries */
 
 @media screen and (max-width: 1440px) {
@@ -333,10 +337,6 @@
 		padding: 1rem;
 		justify-content: space-around !important;
 	}
-
-	/* .background--cover {
-		background-attachment: scroll !important;
-	} */
 
 	.nav--heading {
 		font-size: 1.4rem;
@@ -468,7 +468,7 @@
 	}
 
 	.sticky--nav {
-		display: flex !important;
+		display: none;
 		justify-content: center !important;
 		visibility: visible !important;
 		opacity: 1 !important;
@@ -548,6 +548,10 @@
 }
 
 @media screen and (max-width: 425px) {
+	.background--cover {
+		background-attachment: scroll !important;
+	}
+
 	.top--nav {
 		height: 2.5rem;
 		justify-content: flex-start !important;

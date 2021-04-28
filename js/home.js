@@ -18,9 +18,12 @@ new Glide('.glide', {
 }).mount();
 
 hamburger.addEventListener(`click`, () => {
-	stickyNav.classList.toggle(`open`);
-	stickyNavbar.classList.toggle(`open`);
-	body.classList.toggle(`overflow`);
+	stickyNav.classList.toggle(`display-flex`);
+	setTimeout(() => {
+		stickyNav.classList.toggle(`open`);
+		stickyNavbar.classList.toggle(`open`);
+		body.classList.toggle(`overflow`);
+	}, 500);
 });
 
 const imgs = [
