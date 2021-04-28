@@ -15,6 +15,7 @@ const hamburger = document.querySelector(`.hamburger`);
 const stickyNavbar = document.querySelector(`.sticky--navbar`);
 const stickyLinks = document.querySelectorAll(`.list--nav`);
 const body = document.querySelector(`body`);
+const navLogo = document.querySelector(`.nav--logo`);
 
 AOS.init();
 
@@ -63,10 +64,14 @@ hamburger.addEventListener(`click`, () => {
 		body.classList.toggle(`overflow`);
 		setTimeout(() => {
 			stickyNav.classList.toggle(`display-flex`);
+			hamburger.style.position = 'absolute';
+			navLogo.style.position = `static`;
 		}, 500);
 	} else {
 		stickyNav.classList.toggle(`display-flex`);
 		setTimeout(() => {
+			hamburger.style.position = 'fixed';
+			navLogo.style.position = `fixed`;
 			stickyNav.classList.toggle(`open`);
 			stickyNavbar.classList.toggle(`open`);
 			body.classList.toggle(`overflow`);
