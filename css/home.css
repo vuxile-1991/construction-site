@@ -210,7 +210,7 @@
 .card {
 	width: 100%;
 	height: 100%;
-	background: rgb(255, 255, 255);
+	background: transparent;
 }
 
 .card--header {
