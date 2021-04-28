@@ -28,7 +28,7 @@
 	background: url(../gallery/home/background-cover-1.png) no-repeat center;
 	background-attachment: fixed;
 	visibility: hidden;
-	transition: all 2s ease;
+	transition: all 3s ease;
 	overflow: hidden;
 	position: relative;
 }
@@ -568,7 +568,7 @@
 	}
 	.nav--heading {
 		font-size: 1.2rem;
-		top: 10rem;
+		top: 8rem;
 		right: -16rem;
 		width: 22rem;
 		text-align: center;
