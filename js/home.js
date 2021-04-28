@@ -17,24 +17,6 @@ new Glide('.glide', {
 	},
 }).mount();
 
-hamburger.addEventListener(`click`, () => {
-	if (stickyNav.classList.contains(`display-flex`)) {
-		stickyNav.classList.toggle(`open`);
-		stickyNavbar.classList.toggle(`open`);
-		body.classList.toggle(`overflow`);
-		setTimeout(() => {
-			stickyNav.classList.toggle(`display-flex`);
-		}, 500);
-	} else {
-		stickyNav.classList.toggle(`display-flex`);
-		setTimeout(() => {
-			stickyNav.classList.toggle(`open`);
-			stickyNavbar.classList.toggle(`open`);
-			body.classList.toggle(`overflow`);
-		}, 500);
-	}
-});
-
 const imgs = [
 	`../../construction-site/gallery/home/background-cover-1.png`,
 	`../../construction-site/gallery/home/background-cover-2.png`,
