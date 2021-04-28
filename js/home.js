@@ -18,12 +18,21 @@ new Glide('.glide', {
 }).mount();
 
 hamburger.addEventListener(`click`, () => {
-	stickyNav.classList.toggle(`display-flex`);
-	setTimeout(() => {
+	if (stickyNav.classList.contains(`display-flex`)) {
 		stickyNav.classList.toggle(`open`);
 		stickyNavbar.classList.toggle(`open`);
 		body.classList.toggle(`overflow`);
-	}, 500);
+		setTimeout(() => {
+			stickyNav.classList.toggle(`display-flex`);
+		}, 500);
+	} else {
+		stickyNav.classList.toggle(`display-flex`);
+		setTimeout(() => {
+			stickyNav.classList.toggle(`open`);
+			stickyNavbar.classList.toggle(`open`);
+			body.classList.toggle(`overflow`);
+		}, 500);
+	}
 });
 
 const imgs = [
