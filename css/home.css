@@ -28,7 +28,7 @@
 	background: url(../gallery/home/background-cover-1.png) no-repeat center;
 	background-attachment: fixed;
 	visibility: hidden;
-	transition: all 3s ease;
+	transition: all 2s ease;
 	overflow: hidden;
 	position: relative;
 }
