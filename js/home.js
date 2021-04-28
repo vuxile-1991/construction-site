@@ -24,9 +24,9 @@ hamburger.addEventListener(`click`, () => {
 });
 
 const imgs = [
-	`../../gallery/home/background-cover-1.png`,
-	`../../gallery/home/background-cover-2.png`,
-	`../../gallery/home/background-cover-3.png`,
+	`../../construction-site/gallery/home/background-cover-1.png`,
+	`../../construction-site/gallery/home/background-cover-2.png`,
+	`../../construction-site/gallery/home/background-cover-3.png`,
 ];
 
 const captions = [
