@@ -1,0 +1,158 @@
+#section--1 {
+	height: 90vh;
+}
+
+.background--cover {
+	position: relative;
+	height: 40vh;
+	background: url('../gallery/pages/projects.png') no-repeat center;
+	background-size: cover;
+}
+
+.section--cover {
+	background: url('../gallery/watermark.png') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+
+.project--header {
+	font-size: 3rem;
+	color: #000;
+	border-bottom: 3px solid rgb(23, 55, 79);
+}
+
+.list--item {
+	margin: 0 0.5rem;
+	color: rgb(23, 55, 79);
+	background-color: var(--white);
+	font-size: 1.1rem;
+	text-align: center;
+	letter-spacing: 1.5px;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	border-radius: 0.2rem;
+}
+
+.gallery {
+	flex-wrap: wrap;
+}
+
+.gallery .img {
+	padding: 1rem;
+	width: calc(100% / 4);
+	transition: all 0.3s ease;
+}
+
+.gallery .img span {
+	display: flex;
+	position: relative;
+	color: var(--white);
+	font-size: 1.2rem;
+	text-align: center;
+	background-size: cover;
+	width: 100%;
+	height: 16rem;
+	overflow: hidden;
+}
+
+.img--span-1 {
+	background: url('../gallery/projects/architecture-design.jpeg') no-repeat
+		center;
+}
+
+.img--span-2 {
+	background: url('../gallery/projects/building-construction-1.jpeg') no-repeat
+		center;
+}
+
+.img--span-3 {
+	background: url('../gallery/projects/building-construction-2.jpeg') no-repeat
+		center;
+}
+
+.img--span-4 {
+	background: url('../gallery/projects/flooring.jpeg') no-repeat center;
+}
+
+.img--span-5 {
+	background: url('../gallery/projects/interior-design-1.jpeg') no-repeat center;
+}
+
+.img--span-6 {
+	background: url('../gallery/projects/renovation-2.jpeg') no-repeat center;
+}
+
+.img--span-7 {
+	background: url('../gallery/projects/tiles-1.jpeg') no-repeat center;
+}
+
+.img--span-8 {
+	background: url('../gallery/projects/roofing.jpeg') no-repeat center;
+}
+
+.gallery .img span::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	transition: all 0.3s ease;
+}
+
+.gallery .img.hide {
+	display: none;
+}
+
+.gallery .img.show {
+	animation: animate 0.3s ease;
+}
+
+.gallery .img span p {
+	transform: translateY(10rem);
+	transition: all 0.3s ease;
+}
+
+.gallery .img:hover {
+	transform: scale(1.1);
+}
+
+.gallery .img:hover span {
+	background-color: rgb(0, 0, 0, 0.2);
+}
+
+.gallery .img:hover span::before {
+	background-color: rgb(0, 0, 0, 0.2);
+}
+
+.gallery .img:hover p {
+	transform: translateY(0);
+}
+
+.active {
+	background: rgb(23, 55, 79);
+	color: var(--white) !important;
+	transform: scale(1.1);
+}
+
+.footer {
+	color: var(--white);
+	background: url('../gallery/pages/projects-footer.png') no-repeat center;
+	background-size: cover;
+}
+
+@keyframes animate {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.gallery .img {
+		width: calc(100% / 2);
+	}
+}
