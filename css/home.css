@@ -240,7 +240,7 @@
 
 .back {
 	background-color: var(--dark-blue);
-	transform: rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
 	-webkit-box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 	box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
 }
@@ -252,11 +252,11 @@
 }
 
 .card:hover > .front {
-	transform: rotateY(-180deg);
+	transform: perspective(600px) rotateY(-180deg);
 }
 
 .card:hover > .back {
-	transform: rotateY(0deg);
+	transform: perspective(600px) rotateY(0deg);
 }
 
 .btn--read-more {
