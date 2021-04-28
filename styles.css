@@ -142,6 +142,7 @@ hr {
 	padding-top: 1rem;
 }
 
+.sticky--nav,
 .navbar {
 	color: var(--white);
 }
