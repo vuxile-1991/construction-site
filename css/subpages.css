@@ -97,7 +97,8 @@ aside ul li:hover a {
 
 .footer {
 	color: var(--white);
-	background: url('../../gallery/pages/about-footer.png') no-repeat center;
+	background: url('../../construction-site/gallery/pages/about-footer.png')
+		no-repeat center;
 	background-size: cover;
 }
 
