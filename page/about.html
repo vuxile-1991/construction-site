@@ -11,9 +11,9 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../css/aos.css" />
-		<link rel="stylesheet" href="../css/about.css" />
 		<link rel="stylesheet" href="../css/utilities.css" />
 		<link rel="stylesheet" href="../styles.css" />
+		<link rel="stylesheet" href="../css/about.css" />
 		<link rel="icon" type="img/png" href="../gallery/logo-white.png" />
 		<title>About Us</title>
 	</head>
@@ -68,13 +68,19 @@
 						</div>
 					</div>
 					<button type="button" class="btn--translate btn--en p-05">
-						<img src="../gallery/flags/denmark-flag.png" alt="flag" />
+						<a href="./dk/home.html"
+							><img src="../gallery/flags/denmark-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--dk p-05">
-						<img src="../gallery/flags/germany-flag.png" alt="flag" />
+						<a href="./de/home.html"
+							><img src="../gallery/flags/germany-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--gr p-05">
-						<img src="../gallery/flags/uk-flag.png" alt="flag" />
+						<a href="index.html"
+							><img src="../gallery/flags/uk-flag.png" alt="flag"
+						/></a>
 					</button>
 				</div>
 				<div class="background--cover">
@@ -102,9 +108,12 @@
 										<a class="main--nav--a" href="about.html">About Us</a>
 									</li>
 									<li class="list--nav pr-1 drop--menu-a">
-										<a class="main--nav--a" href="services.html"> Services </a>
-										<i class="fas fa-caret-down drop-icon"></i>
-										<ul class="dropdown--menu">
+										<span class="main--nav--a main--nav-dropdown">
+											Services
+											<i class="fas fa-caret-down drop-icon"></i>
+										</span>
+
+										<ul class="dropdown--menu display-none">
 											<li class="dropdown--item flex pl-1 ai-c">
 												<a href="./subpage/architecture-design.html"
 													>Architecture Design</a
@@ -161,7 +170,7 @@
 										alt="logo"
 									/>
 								</div>
-								<div>
+								<div class="sticky--nav-container">
 									<ul class="sticky--navbar flex">
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../index.html">Home</a>
@@ -170,10 +179,50 @@
 											<a class="main--nav--a" href="about.html">About Us</a>
 										</li>
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="services.html">Services</a>
-											<i class="fas fa-caret-down drop-icon"></i>
+											<span class="sticky--nav-dropdown main--nav--a"
+												>Services
+												<i class="fas fa-caret-down drop-icon"></i>
+											</span>
+											<ul class="mobile--dropdown">
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-top display-none"
+												>
+													<a href="./subpage/architecture-design.html"
+														>Architecture Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/building-construction.html"
+														>Building Construction</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/flooring-and-roofing.html"
+														>Flooring & Roofing</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/interior-design.html"
+														>Interior & Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/renovation.html"
+														>Building Renovation</a
+													>
+												</li>
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-bottom display-none"
+												>
+													<a
+														class="mobile--dropdown-item-bottom-a"
+														href="./subpage/painting-tiles.html"
+														>Painting & Tiles</a
+													>
+												</li>
+											</ul>
 										</li>
-										<li class="list--nav pr-1">
+										<li class="list--nav list--nav-projects pr-1">
 											<a class="main--nav--a" href="projects.html">Projects</a>
 										</li>
 										<li class="list--nav pr-1">
@@ -207,25 +256,35 @@
 						renovation experience. In order to provide our clients with the best
 						possible service in the field of construction, we have selected the
 						best team with over than 20 years of experience. <br />
+						<br />
+					</p>
+					<p class="about--p" data-aos="fade-up" data-aos-duration="1500">
 						Our aim is to create the space you deserve, be it for living or
 						business, by offering services ranging from minor remodeling to full
-						overhauls, to constructing entirely new additions. <br />
+						overhauls, to constructing entirely new additions. Our team is
+						dedicated to achieve excellence on each and every project and will
+						provide customer service that is nothing less than outstanding.
 						<br />
-						Our team is dedicated to achieve excellence on each and every
-						project and will provide customer service that is nothing less than
-						outstanding. <br />
 						<br />
+					</p>
+					<p class="about--p" data-aos="fade-up" data-aos-duration="1000">
 						We offer a full service from elaboration of an idea through design
 						to final works on your new home.
+						<br />
+						<br />
 					</p>
+
 					<p class="about--p" data-aos="fade-up" data-aos-duration="1000">
 						At J&B Enterprise, we provide a full suite of construction services,
 						our scope ranges from large scale interior and exterior renovations
-						to completely new objects. <br />
+						to completely new objects.
+						<br />
+						<br />
+					</p>
+					<p class="about--p" data-aos="fade-up" data-aos-duration="1000">
 						We are proud to complete projects on time and never sacrifice
 						service or quality. Our mission is to build a home for you with the
-						same attention to detail as we would for ourselves! <br />
-						<br />
+						same attention to detail as we would for ourselves!
 					</p>
 				</article>
 
@@ -239,6 +298,7 @@
 					</div>
 				</div>
 			</section>
+			<hr />
 			<section id="section-2 ">
 				<article class="about-2-background flex">
 					<div
@@ -255,24 +315,98 @@
 							We're knowledgeable about build your dream home
 						</h3>
 						<br />
-						<p class="about--img--p">
+						<p class="about--img--p mb-3">
 							The J&B Enterprise is right choice for you next construction and
 							renovation project!
 							<br />
 							We are proud to call your home our home!
 						</p>
 
-						<button class="btn--2 btn--contact">Contact Us</button>
+						<button
+							class="btn--2 btn--contact btn--background-right pr-4 pl-4 pt-1 pb-1"
+						>
+							Contact Us
+						</button>
 					</div>
 				</article>
 			</section>
-			<section id="section-3" class="m-auto">
-				<!-- ! TODO TEAM GALLERY IMPORT -->
+			<section id="section-3" class="m-auto mt-5 flex f-col jc-c ai-c">
+				<h2>Our Team</h2>
+				<div class="employee--container flex jc-c ai-c">
+					<div class="employee--card mt-5 mb-5">
+						<img
+							class="employee--img"
+							src="../gallery/empleyee/employee-1.jpg"
+							alt="employee"
+						/>
+						<div class="employee--social">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<div class="employee--info">
+							<h4>John Doe</h4>
+							<p>Ceo of J&B ENTERPRISE</p>
+						</div>
+					</div>
+					<div class="employee--card mt-5 mb-5 ml-1">
+						<img
+							class="employee--img"
+							src="../gallery/empleyee/employee-2.jpg"
+							alt="employee"
+						/>
+						<div class="employee--social">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<div class="employee--info">
+							<h4>John Doe</h4>
+							<p>Ceo of J&B ENTERPRISE</p>
+						</div>
+					</div>
+					<div class="employee--card mt-5 mb-5 ml-1 mr-1">
+						<img
+							class="employee--img"
+							src="../gallery/empleyee/employee-3.jpg"
+							alt="employee"
+						/>
+						<div class="employee--social">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<div class="employee--info">
+							<h4>John Doe</h4>
+							<p>Ceo of J&B ENTERPRISE</p>
+						</div>
+					</div>
+					<div class="employee--card mt-5 mb-5">
+						<img
+							class="employee--img"
+							src="../gallery/empleyee/employee-4.jpg"
+							alt="employee"
+						/>
+						<div class="employee--social">
+							<i class="fab fa-facebook"></i>
+							<i class="fab fa-instagram"></i>
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<div class="employee--info">
+							<h4>John Doe</h4>
+							<p>Ceo of J&B ENTERPRISE</p>
+						</div>
+					</div>
+				</div>
 			</section>
-
+			<hr />
 			<section id="section-4" class="m-auto mb-5">
 				<article class="flex f-col ai-c">
-					<h2 class="mb-5 mt-5" data-aos="zoom-in-up" data-aos-duration="1000">
+					<h2
+						class="testimonial--heading mb-4 mt-3"
+						data-aos="zoom-in-up"
+						data-aos-duration="1000"
+					>
 						What our client says
 					</h2>
 					<!-- *TESTIMONIAL -->
@@ -285,8 +419,8 @@
 							<div>
 								<img
 									class="carousel--profile"
-									src="https://picsum.photos/100/100"
-									alt=""
+									src="../gallery/testimonials/rama.png"
+									alt="testimonial"
 								/>
 							</div>
 
@@ -297,8 +431,7 @@
 									experienced professionals with superior results! We are
 									impressed with the quality of work.“
 								</blockquote>
-								<h4 class="pt-1">John Doe</h4>
-								<p class="pt-1">Ceo of Mart</p>
+								<h4 class="pt-1">Sinaver Rama</h4>
 							</div>
 						</div>
 						<div
@@ -309,19 +442,18 @@
 							<div class="pr-2">
 								<img
 									class="carousel--profile"
-									src="https://picsum.photos/100/100"
-									alt=""
+									src="../gallery/testimonials/sarah.png"
+									alt="testimonial"
 								/>
 							</div>
 
 							<div>
 								<blockquote class="pt-1">
 									"They have the expertise to do any job. The job was finished
-									in a timely manner We would not hesitate to have J&B
+									in a timely manner. We would not hesitate to have J&B
 									Enterprise do any remodeling or building project for us."
 								</blockquote>
-								<h4 class="pt-1">John Doe</h4>
-								<p class="pt-1">Ceo of Mart</p>
+								<h4 class="pt-1">Sarah Shutterbug Gregory</h4>
 							</div>
 						</div>
 					</div>
@@ -344,12 +476,12 @@
 					data-aos-duration="1000"
 				>
 					<div class="flex f-col ai-c">
-						<h3 class="p-1">Great <em>Experience</em> for Building</h3>
-						<h2 class="pb-1">Construction & Renovation</h2>
+						<h3 class="pt-1">Great <em>Experience</em> for Building</h3>
+						<h2>Construction & Renovation</h2>
 					</div>
-					<div class="flex jc-c pt-3">
+					<div class="flex jc-c ai-c pt-2 pb-1">
 						<button
-							class="btn--2 btn--contact pr-4 pl-4 pt-1"
+							class="btn--2 btn--contact pr-4 pl-4 pt-1 pb-1"
 							data-aos="zoom-in-up"
 							data-aos-anchor-placement="top-bottom"
 						>
@@ -357,15 +489,6 @@
 						</button>
 					</div>
 				</article>
-				<!-- <div class="catch--parallax flex f-col ai-c jc-c">
-					<h3 class="p-1">Great <em>Experience</em> for Building</h3>
-					<h2 class="pb-1">Construction & Renovation</h2>
-					<div class="flex jc-c pt-1">
-						<button class="btn--2 btn--contact pr-4 pl-4 pt-1" type="button ">
-							Contact Us
-						</button>
-					</div>
-				</div> -->
 			</section>
 		</main>
 		<footer class="footer pt-5">
@@ -398,7 +521,7 @@
 			</div>
 			<div class="footer-lists m-auto pb-5">
 				<div class="footer--brand flex f-col">
-					<div class="logo--container">
+					<div>
 						<img
 							class="logo--brand"
 							src="../gallery/logo-white.png"
@@ -441,12 +564,7 @@
 							</li>
 							<li class="pt-1">
 								<a class="link--white" href="about.html"
-									><i class="fas fa-chevron-right"></i> Abut Us</a
-								>
-							</li>
-							<li class="pt-1">
-								<a class="link--white" href="services.html"
-									><i class="fas fa-chevron-right"></i> Services</a
+									><i class="fas fa-chevron-right"></i> About Us</a
 								>
 							</li>
 							<li class="pt-1">
@@ -469,7 +587,6 @@
 					<div>
 						<h4 class="mb-1">Our Services</h4>
 						<ul class="footer__services">
-							<!-- !TODO FILL LIST SERIVES -->
 							<li class="pt-1">
 								<a
 									class="link--white"

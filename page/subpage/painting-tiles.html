@@ -11,9 +11,9 @@
 			crossorigin="anonymous"
 		/>
 		<link rel="stylesheet" href="../../css/aos.css">
-		<link rel="stylesheet" href="../../css/subpages.css" />
 		<link rel="stylesheet" href="../../css/utilities.css" />
 		<link rel="stylesheet" href="../../styles.css" />
+		<link rel="stylesheet" href="../../css/subpages.css" />
 		<meta name="description" content="We are proud of our painters and ceramist who are ready to respond to all clients requirements.">
 		<title>Pinting and tiles</title>
 	</head>
@@ -67,13 +67,19 @@
 						</div>
 					</div>
 					<button type="button" class="btn--translate btn--en p-05">
-						<img src="../../gallery/flags/denmark-flag.png" alt="flag" />
+						<a href="./dk/home.html"
+							><img src="../../gallery/flags/denmark-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--dk p-05">
-						<img src="../../gallery/flags/germany-flag.png" alt="flag" />
+						<a href="./de/home.html"
+							><img src="../../gallery/flags/germany-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--gr p-05">
-						<img src="../../gallery/flags/uk-flag.png" alt="flag" />
+						<a href="index.html"
+							><img src="../../gallery/flags/uk-flag.png" alt="flag"
+						/></a>
 					</button>
 				</div>
 				<div class="background--cover">
@@ -101,9 +107,12 @@
 										<a class="main--nav--a" href="../about.html">About Us</a>
 									</li>
 									<li class="list--nav pr-1 drop--menu-a">
-										<a class="main--nav--a" href="../services.html"> Services </a>
-										<i class="fas fa-caret-down drop-icon"></i>
-										<ul class="dropdown--menu">
+										<span class="main--nav--a main--nav-dropdown">
+											Services
+											<i class="fas fa-caret-down drop-icon"></i>
+										</span>
+
+										<ul class="dropdown--menu display-none">
 											<li class="dropdown--item flex pl-1 ai-c">
 												<a href="architecture-design.html"
 													>Architecture Design</a
@@ -160,19 +169,59 @@
 										alt="logo"
 									/>
 								</div>
-								<div>
+								<div class="sticky--nav-container">
 									<ul class="sticky--navbar flex">
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="../index.html">Home</a>
+											<a class="main--nav--a" href="../../index.html">Home</a>
 										</li>
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../about.html">About Us</a>
 										</li>
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="../services.html">Services</a>
-											<i class="fas fa-caret-down drop-icon"></i>
+											<span class="sticky--nav-dropdown main--nav--a"
+												>Services
+												<i class="fas fa-caret-down drop-icon"></i>
+											</span>
+											<ul class="mobile--dropdown">
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-top display-none"
+												>
+													<a href="architecture-design.html"
+														>Architecture Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="building-construction.html"
+														>Building Construction</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="flooring-and-roofing.html"
+														>Flooring & Roofing</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="interior-design.html"
+														>Interior & Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="renovation.html"
+														>Building Renovation</a
+													>
+												</li>
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-bottom display-none"
+												>
+													<a
+														class="mobile--dropdown-item-bottom-a"
+														href="painting-tiles.html"
+														>Painting & Tiles</a
+													>
+												</li>
+											</ul>
 										</li>
-										<li class="list--nav pr-1">
+										<li class="list--nav list--nav-projects pr-1">
 											<a class="main--nav--a" href="../projects.html">Projects</a>
 										</li>
 										<li class="list--nav pr-1">
@@ -193,7 +242,7 @@
 		</header>
 			<main>
 				<div class="section--cover">
-				<section id="section--1">
+				<section id="section--1" class="m-auto pt-5 pb-5">
 					<div class="main--container flex">
 						<div class="aside--container">
 						<aside data-aos="fade-center" data-aos-duration="1000">
@@ -202,24 +251,24 @@
 								<li class="flex ai-c"><a href="building-construction.html">Building Construction</a></li>
 								<li class="flex ai-c"><a href="flooring-and-roofing.html">Flooring & Roofing</a></li>
 								<li class="flex ai-c"><a href="interior-design.html">Interior & Design</a></li>
-								<li class="flex ai-c"><a href="painting-tiles.html">Painting & Tiles</a></li>
+								<li class="flex ai-c active--sub"><a href="painting-tiles.html">Painting & Tiles</a></li>
 								<li class="flex ai-c"><a href="renovation.html">Building Renovation</a></li>
 							</ul>
 						</aside>
 					</div>
-						<div class="main--content">
+						<div class="main--content pl-3">
 							<article>
-								<h2 class="page--heading" data-aos="fade-down" data-aos-duration="1000">Painting & Tiles</h2>
-								<div class="flex ai-c">
+								<h2 class="page--heading pb-3" data-aos="fade-down" data-aos-duration="1000">Painting & Tiles</h2>
+								<div class="articles flex">
 								<p class="sub--p" data-aos="fade-up" data-aos-duration="2000">										
 									Here at J&B Enterprise, we use all the latest painting and tiles services technology and techniques to ensure a long-lasting beautiful result.
 															We are proud of our painters and ceramist who are ready to respond to all clients’ requirements. Precision and meticulousness represent our idea, and your home is our mirror.
 									
 								</p>	
-								<img data-aos="fade-left" data-aos-duration="2000" class="ml-5" src="https://picsum.photos/300/300" alt="img-1" />
+								<img data-aos="fade-left" data-aos-duration="2000" class="img img--1 ml-5" src="https://picsum.photos/300/300" alt="img-1" />
 							</div>
-							<div class="flex ai-c">
-								<img data-aos="fade-right" data-aos-duration="2000" src="https://picsum.photos/300/300" alt="img-1" />
+							<div class="articles flex">
+								<img data-aos="fade-right" data-aos-duration="2000" class="img img--2" src="https://picsum.photos/300/300" alt="img-1" />
 								<p class="sub--p ml-5" data-aos="fade-center" data-aos-duration="2000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis tempora nobis fugiat laboriosam, itaque eveniet ullam quibusdam aliquid, nihil magnam harum placeat? Tenetur, voluptatem earum! Laboriosam nam fugit facere ipsam.</p>
 								</div>
 							</article>
@@ -234,7 +283,7 @@
 								
 							</div>
 							<div class="flex jc-c pt-1">
-									<button class="btn--2 btn--contact pr-4 pl-4 pt-1">Contact Us</button> 
+									<button class="btn--2 btn--contact pr-4 pl-4 pt-1 pb-1">Contact Us</button> 
 									</div>
 							</article>
 						</div>
@@ -270,7 +319,7 @@
 				</div>
 				<div class="footer-lists m-auto pb-5">
 					<div class="footer--brand flex f-col">
-						<div class="logo--container">
+						<div>
 							<img class="logo--brand" src="../../gallery/logo-white.png" alt="logo" />
 						</div>
 						<p class="slogan pb-1 mt-2">We build your dream house</p>
@@ -309,12 +358,7 @@
 								</li>
 								<li class="pt-1">
 									<a class="link--white" href="../about.html"
-										><i class="fas fa-chevron-right"></i> Abut Us</a
-									>
-								</li>
-								<li class="pt-1">
-									<a class="link--white" href="../services.html"
-										><i class="fas fa-chevron-right"></i> Services</a
+										><i class="fas fa-chevron-right"></i> About Us</a
 									>
 								</li>
 								<li class="pt-1">

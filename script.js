@@ -14,8 +14,16 @@ const navBar = document.querySelector(`.navbar`);
 const hamburger = document.querySelector(`.hamburger`);
 const stickyNavbar = document.querySelector(`.sticky--navbar`);
 const stickyLinks = document.querySelectorAll(`.list--nav`);
-const body = document.querySelector(`body`);
+const html = document.getElementsByTagName(`html`);
+const body = document.getElementsByTagName(`body`);
 const navLogo = document.querySelector(`.nav--logo`);
+const logoContainer = document.querySelector(`.logo--container`);
+const mobileDropDownMenu = document.querySelector(`.mobile--dropdown`);
+const mobileDropItem = document.querySelectorAll(`.mobile--dropdown-item`);
+const listNavProjects = document.querySelector(`.list--nav-projects`);
+const dropIcon = document.querySelectorAll(`.drop-icon`);
+const employeeImg = document.querySelectorAll(`.employee--img`);
+const employeeSocial = document.querySelectorAll(`.employee--social`);
 
 AOS.init();
 
@@ -41,40 +49,46 @@ const headerObserver = new IntersectionObserver(stickyNavigation, {
 
 headerObserver.observe(nav);
 
-// navBar.addEventListener(`mouseover`, function (e) {
-// 	const elOver = e.target.closest(`.drop--menu-a`);
-// 	if (!elOver) return;
-// 	dropDownMenu.classList.toggle(`display`);
-// });
-
-// dropMenu.addEventListener(`mouseout`, function (e) {
-// 	const elOver = e.target.closest(`.drop--menu-a`);
-// 	if (!elOver) return;
-// 	dropDownMenu.classList.add(`display`);
-// });
-
-// dropDownMenu.addEventListener(`mouseout`, function () {
-// 	dropDownMenu.classList.add(`display`);
-// });
-
 hamburger.addEventListener(`click`, () => {
-	if (stickyNav.classList.contains(`display-flex`)) {
+	if (stickyNav.classList.contains(`display-block`)) {
+		logoContainer.classList.toggle(`background`);
 		stickyNav.classList.toggle(`open`);
 		stickyNavbar.classList.toggle(`open`);
-		body.classList.toggle(`overflow`);
+		html[0].classList.toggle(`overflow`);
+		body[0].classList.toggle(`overflow`);
 		setTimeout(() => {
-			stickyNav.classList.toggle(`display-flex`);
-			hamburger.style.position = 'absolute';
-			navLogo.style.position = `static`;
+			stickyNav.classList.toggle(`display-block`);
 		}, 500);
 	} else {
-		stickyNav.classList.toggle(`display-flex`);
+		stickyNav.classList.toggle(`display-block`);
 		setTimeout(() => {
-			hamburger.style.position = 'fixed';
-			navLogo.style.position = `fixed`;
+			logoContainer.classList.toggle(`background`);
 			stickyNav.classList.toggle(`open`);
 			stickyNavbar.classList.toggle(`open`);
-			body.classList.toggle(`overflow`);
+			html[0].classList.toggle(`overflow`);
+			body[0].classList.toggle(`overflow`);
 		}, 500);
 	}
+});
+
+stickyNavbar.addEventListener(`click`, function (e) {
+	const clicked = e.target.closest(`.sticky--nav-dropdown`);
+	if (!clicked) return;
+	mobileDropDownMenu.classList.toggle(`mt-1`);
+	dropIcon.forEach(i => {
+		i.classList.toggle(`icon--translate-down`);
+	});
+
+	mobileDropItem.forEach(item => {
+		item.classList.toggle(`display-none`);
+	});
+});
+
+mainNav.addEventListener(`click`, function (e) {
+	const clicked = e.target.closest(`.main--nav-dropdown`);
+	if (!clicked) return;
+	dropIcon.forEach(i => {
+		i.classList.toggle(`icon--translate-down`);
+	});
+	dropDownMenu.classList.toggle(`display-none`);
 });

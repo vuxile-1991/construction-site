@@ -9,12 +9,12 @@
 			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
 			integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
 			crossorigin="anonymous"
-		/>
+			/>
+			<link rel="icon" type="img/png" href="../gallery/logo-white.png">
 		<link rel="stylesheet" href="../css/aos.css" />
-		<link rel="stylesheet" href="../css/contact.css" />
 		<link rel="stylesheet" href="../css/utilities.css" />
 		<link rel="stylesheet" href="../styles.css" />
-		<link rel="icon" type="img/png" href="../gallery/logo-white.png">
+		<link rel="stylesheet" href="../css/contact.css" />
 		<title>Contact</title>
 	</head>
 	<body>
@@ -68,13 +68,19 @@
 						</div>
 					</div>
 					<button type="button" class="btn--translate btn--en p-05">
-						<img src="../gallery/flags/denmark-flag.png" alt="flag" />
+						<a href="./dk/home.html"
+							><img src="../gallery/flags/denmark-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--dk p-05">
-						<img src="../gallery/flags/germany-flag.png" alt="flag" />
+						<a href="./de/home.html"
+							><img src="../gallery/flags/germany-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--gr p-05">
-						<img src="../gallery/flags/uk-flag.png" alt="flag" />
+						<a href="index.html"
+							><img src="../gallery/flags/uk-flag.png" alt="flag"
+						/></a>
 					</button>
 				</div>
 				<div class="background--cover">
@@ -102,9 +108,12 @@
 										<a class="main--nav--a" href="about.html">About Us</a>
 									</li>
 									<li class="list--nav pr-1 drop--menu-a">
-										<a class="main--nav--a" href="services.html"> Services </a>
-										<i class="fas fa-caret-down drop-icon"></i>
-										<ul class="dropdown--menu">
+										<span class="main--nav--a main--nav-dropdown">
+											Services
+											<i class="fas fa-caret-down drop-icon"></i>
+										</span>
+
+										<ul class="dropdown--menu display-none">
 											<li class="dropdown--item flex pl-1 ai-c">
 												<a href="./subpage/architecture-design.html"
 													>Architecture Design</a
@@ -161,7 +170,7 @@
 										alt="logo"
 									/>
 								</div>
-								<div>
+								<div class="sticky--nav-container">
 									<ul class="sticky--navbar flex">
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../index.html">Home</a>
@@ -170,10 +179,50 @@
 											<a class="main--nav--a" href="about.html">About Us</a>
 										</li>
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="services.html">Services</a>
-											<i class="fas fa-caret-down drop-icon"></i>
+											<span class="sticky--nav-dropdown main--nav--a"
+												>Services
+												<i class="fas fa-caret-down drop-icon"></i>
+											</span>
+											<ul class="mobile--dropdown">
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-top display-none"
+												>
+													<a href="./subpage/architecture-design.html"
+														>Architecture Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/building-construction.html"
+														>Building Construction</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/flooring-and-roofing.html"
+														>Flooring & Roofing</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/interior-design.html"
+														>Interior & Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/renovation.html"
+														>Building Renovation</a
+													>
+												</li>
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-bottom display-none"
+												>
+													<a
+														class="mobile--dropdown-item-bottom-a"
+														href="./subpage/painting-tiles.html"
+														>Painting & Tiles</a
+													>
+												</li>
+											</ul>
 										</li>
-										<li class="list--nav pr-1">
+										<li class="list--nav list--nav-projects pr-1">
 											<a class="main--nav--a" href="projects.html">Projects</a>
 										</li>
 										<li class="list--nav pr-1">
@@ -192,44 +241,62 @@
 				</div>
 			</div>
 		</header>
-			<main>
-				<section id="contact--heading" class="flex ai-c jc-c mt-3"> <h2 class="pb-1">Get first <em style="text-decoration:underline;"> Consultation</h2></em></section>
-				<section id="section--1" class="flex f-col jc-c ai-c">
-					<form class="form" action="">
-						<div class="grid g-col-2 g-gap-20">
-							<input
-								id="name"
-								class="input input-name"
-								type="text"
-								placeholder="Enter your name"
-								required
-							/>
-							<input
-								id="email"
-								class="input input-email"
-								type="email"
-								placeholder="Enter your email"
-								required
-							/>
-							<input
-								type="text"
-								id="subject"
-								class="input input-subject"
-								placeholder="Subject"
-							/>
-							<textarea
-								id="message"
-								class="input input-message"
-								type="message"
-								cols="50"
-								rows="7"
-								placeholder="Enter your message"
-							></textarea>
+			<main class="pt-1 pb-1">
+				<div id="contact--heading" class="flex ai-c jc-c pt-3"> <h2 class="">Get first <em style="text-decoration:underline;">Consultation</h2></em></div>
+				<section id="section--1" class="m-auto">
+				<div class="contact--container flex jc-between pt-5 pb-5">
+					<aside class="contact--aside flex f-col ai-start jc-even p-1">
+						<div class="contact--info pb-1">
+							<h3>CONTACT US</h3>
+							<p class="pt-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet eius natus beatae nulla minima nesciunt!</p>
 						</div>
-						<button type="submit" class="btn--2 btn--contact mt-2">
-							Submit
-						</button>
+
+						<div class="contact--phone pb-1">
+							<h4>CONTACT PHONE</h4>
+							<p class="pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, voluptatum?</p>
+							<div class="flex ai-c pt-1">
+							<i class="fas fa-phone-volume contact-icon"></i>
+							<p class="p--contact ml-05">+45 819 358 52</p>
+						</div>
+						<div class="flex ai-c pt-05">
+							<i class="fas fa-phone-volume contact-icon"></i>
+							<p class="p--contact ml-05">+45 503 843 24</p>
+						</div>
+						</div>
+						<div class="contact--email">
+							<h4>CONTACT EMAIL</h4>
+							<p class="pt-1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, beatae?</p>
+							<div class="flex ai-c pt-1">
+							<i class="far fa-envelope contact-icon"></i>
+							<p class="p--contact ml-05">jandbenterprisebg@gmail.com</p>
+						</div>
+						</div>
+					</aside>
+					<form class="form flex f-col pl-2" action="POST">
+						<div class="full--name-input flex f-col">
+						<label class="pb-1" for="name">Full Name</label>
+						<input class="pt-1 pb-1 pl-1" autocomplete="off" type="text" name="name" placeholder="Enter your Full Name">
+					</div>
+					<div class="email-subject--container flex pt-1">
+					<div class="email-input flex f-col pr-05">
+						<label class="pb-1" for="email">Email</label>
+						<input class="email--input pt-1 pb-1 pl-1" autocomplete="off" type="email" name="email" placeholder="Enter your Email">
+					</div>
+
+					<div class="subject-input flex f-col pl-05">
+						<label class="pb-1" for="subject">Subject</label>
+						<input class="subject--input pt-1 pb-1 pl-1" autocomplete="off" type="text" name="subject" placeholder="Enter your Subject">
+					</div>
+				</div>
+				<div class="flex f-col pt-1">
+					<label class="pb-1" for="message">Message</label>
+					<textarea class="message--textarea pl-1 pt-1" name="message" id="msg" cols="80" rows="13" placeholder="Enter your Message"></textarea>
+				</div>
+				<div class="flex jc-c mt-2">
+				<button class="btn--submit btn--2 btn--contact pl-4 pr-4 pt-1 pb-1" type="submit">Submit</button>
+			</div>
 					</form>
+				</div>
 				</section>
 			</main>
 			<footer class="footer pt-5">
@@ -262,7 +329,7 @@
 				</div>
 				<div class="footer-lists m-auto pb-5">
 					<div class="footer--brand flex f-col">
-						<div class="logo--container">
+						<div>
 							<img class="logo--brand" src="../gallery/logo-white.png" alt="logo" />
 						</div>
 						<p class="slogan pb-1 mt-2">We build your dream house</p>
@@ -301,12 +368,7 @@
 								</li>
 								<li class="pt-1">
 									<a class="link--white" href="about.html"
-										><i class="fas fa-chevron-right"></i> Abut Us</a
-									>
-								</li>
-								<li class="pt-1">
-									<a class="link--white" href="services.html"
-										><i class="fas fa-chevron-right"></i> Services</a
+										><i class="fas fa-chevron-right"></i> About Us</a
 									>
 								</li>
 								<li class="pt-1">

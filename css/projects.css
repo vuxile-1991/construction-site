@@ -1,5 +1,5 @@
 #section--1 {
-	height: 90vh;
+	padding: 2rem 2rem;
 }
 
 .background--cover {
@@ -22,8 +22,13 @@
 	border-bottom: 3px solid rgb(23, 55, 79);
 }
 
+.filter--nav {
+	flex-wrap: wrap;
+}
+
 .list--item {
-	margin: 0 0.5rem;
+	width: 15rem;
+	margin: 0.5rem;
 	color: rgb(23, 55, 79);
 	background-color: var(--white);
 	font-size: 1.1rem;
@@ -31,7 +36,7 @@
 	letter-spacing: 1.5px;
 	cursor: pointer;
 	transition: all 0.3s ease-in-out;
-	border-radius: 0.2rem;
+	border-bottom: 2px solid var(--dark-blue);
 }
 
 .gallery {
@@ -151,8 +156,41 @@
 	}
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1024px) {
+	.gallery .img {
+		width: calc(100% / 3);
+	}
+
+	.list--item {
+		margin-top: 0.5rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
 	.gallery .img {
 		width: calc(100% / 2);
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.gallery .img {
+		width: 20rem !important;
+	}
+
+	.filter--nav {
+		flex-direction: column;
+	}
+
+	.gallery {
+		padding: 0 !important;
+		flex-direction: column !important;
+		justify-content: center !important;
+		align-items: center !important;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.gallery .img {
+		width: 100% !important;
 	}
 }

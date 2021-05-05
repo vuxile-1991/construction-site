@@ -67,13 +67,19 @@
 						</div>
 					</div>
 					<button type="button" class="btn--translate btn--en p-05">
-						<img src="../gallery/flags/denmark-flag.png" alt="flag" />
+						<a href="./dk/home.html"
+							><img src="../gallery/flags/denmark-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--dk p-05">
-						<img src="../gallery/flags/germany-flag.png" alt="flag" />
+						<a href="./de/home.html"
+							><img src="../gallery/flags/germany-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--gr p-05">
-						<img src="../gallery/flags/uk-flag.png" alt="flag" />
+						<a href="index.html"
+							><img src="../gallery/flags/uk-flag.png" alt="flag"
+						/></a>
 					</button>
 				</div>
 				<div class="background--cover">
@@ -101,9 +107,12 @@
 										<a class="main--nav--a" href="about.html">About Us</a>
 									</li>
 									<li class="list--nav pr-1 drop--menu-a">
-										<a class="main--nav--a" href="services.html"> Services </a>
-										<i class="fas fa-caret-down drop-icon"></i>
-										<ul class="dropdown--menu">
+										<span class="main--nav--a main--nav-dropdown">
+											Services
+											<i class="fas fa-caret-down drop-icon"></i>
+										</span>
+
+										<ul class="dropdown--menu display-none">
 											<li class="dropdown--item flex pl-1 ai-c">
 												<a href="./subpage/architecture-design.html"
 													>Architecture Design</a
@@ -160,7 +169,7 @@
 										alt="logo"
 									/>
 								</div>
-								<div>
+								<div class="sticky--nav-container">
 									<ul class="sticky--navbar flex">
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../index.html">Home</a>
@@ -169,10 +178,50 @@
 											<a class="main--nav--a" href="about.html">About Us</a>
 										</li>
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="services.html">Services</a>
-											<i class="fas fa-caret-down drop-icon"></i>
+											<span class="sticky--nav-dropdown main--nav--a"
+												>Services
+												<i class="fas fa-caret-down drop-icon"></i>
+											</span>
+											<ul class="mobile--dropdown">
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-top display-none"
+												>
+													<a href="./subpage/architecture-design.html"
+														>Architecture Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/building-construction.html"
+														>Building Construction</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/flooring-and-roofing.html"
+														>Flooring & Roofing</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/interior-design.html"
+														>Interior & Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/renovation.html"
+														>Building Renovation</a
+													>
+												</li>
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-bottom display-none"
+												>
+													<a
+														class="mobile--dropdown-item-bottom-a"
+														href="./subpage/painting-tiles.html"
+														>Painting & Tiles</a
+													>
+												</li>
+											</ul>
 										</li>
-										<li class="list--nav pr-1">
+										<li class="list--nav list--nav-projects pr-1">
 											<a class="main--nav--a" href="projects.html">Projects</a>
 										</li>
 										<li class="list--nav pr-1">
@@ -192,45 +241,42 @@
 			</div>
 		</header>
 		<main>
-			<section id="section--1" class="m-auto">
-				<article class="testimonials flex pt-5">
+			<section id="section--1" class="m-auto pt-5 pb-5">
+				<article class="testimonials flex">
 					<div class="carousel--testimonials flex">
 						<div>
 							<img
 								class="carousel--profile"
-								src="https://picsum.photos/100/100"
-								alt=""
+								src="../gallery/testimonials/claus.png"
+								alt="testimonial"
 							/>
 						</div>
 
 						<div class="pl-2">
 							<blockquote>
-								“Our complete satisfaction with the service provided by Greiner
-								Construction. The team has proven themselves as experienced
-								professionals with superior results! We are impressed with the
-								quality of work“
+								"Thank you again for your assistance with this project. As
+								usual, you do an excellent job. The team was very thorough with
+								the planning and kept me informed."
 							</blockquote>
-							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
+							<h4 class="pt-1">Claus Gaarn Hald</h4>
 						</div>
 					</div>
 					<div class="carousel--testimonials flex">
 						<div>
 							<img
 								class="carousel--profile"
-								src="https://picsum.photos/100/100"
-								alt=""
+								src="../gallery/testimonials/anne.png"
+								alt="testimonial"
 							/>
 						</div>
 
 						<div class="pl-2">
 							<blockquote>
-								"They have the expertise to do any job. The job was finished in
-								a timely manner We would not hesitate to have J&B Enterprise do
-								any remodeling or building project for us"
+								"They did a wonderful job with the construction, left the
+								completed offices in neat and clean and were very pleasant to
+								work with."
 							</blockquote>
-							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
+							<h4 class="pt-1">Anne Losif</h4>
 						</div>
 					</div>
 				</article>
@@ -239,38 +285,37 @@
 						<div>
 							<img
 								class="carousel--profile"
-								src="https://picsum.photos/100/100"
-								alt=""
+								src="../gallery/testimonials/sarah.png"
+								alt="testimonial"
 							/>
 						</div>
 
 						<div class="pl-2">
 							<blockquote>
-								"Thank you for making our construction projects as stress free
-								as possible. Your group of professionals has made our building
-								exactly what we had hoped for. The suggestions and ideas for
-								changes were always appreciated."
+								"They have the expertise to do any job. The job was finished in
+								a timely manner We would not hesitate to have J&B Enterprise do
+								any remodeling or building project for us."
 							</blockquote>
-							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
+							<h4 class="pt-1">Sarah Shutterbug Gregory</h4>
 						</div>
 					</div>
 					<div class="carousel--testimonials flex">
 						<div>
 							<img
 								class="carousel--profile"
-								src="https://picsum.photos/100/100"
-								alt=""
+								src="../gallery/testimonials/rama.png"
+								alt="testimonial"
 							/>
 						</div>
 
 						<div class="pl-2">
 							<blockquote>
-								"We would pick J&B Enterprise for any project, they are very
-								efficient, honest, and see to all the details."
+								“Our complete satisfaction with the service provided by Greiner
+								Construction. The team has proven themselves as experienced
+								professionals with superior results! We are impressed with the
+								quality of work.“
 							</blockquote>
-							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
+							<h4 class="pt-1">Sinaver Rama</h4>
 						</div>
 					</div>
 				</article>
@@ -292,7 +337,6 @@
 								experience."
 							</blockquote>
 							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
 						</div>
 					</div>
 					<div class="carousel--testimonials flex">
@@ -312,7 +356,6 @@
 								very best."
 							</blockquote>
 							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
 						</div>
 					</div>
 				</article>
@@ -328,12 +371,10 @@
 
 						<div class="pl-2">
 							<blockquote>
-								"Thank you again for your assistance with this project. As
-								usual, you do an excellent job. The team was very thorough with
-								the planning and kept me informed."
+								"We would pick J&B Enterprise for any project, they are very
+								efficient, honest, and see to all the details."
 							</blockquote>
 							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
 						</div>
 					</div>
 					<div class="carousel--testimonials flex">
@@ -347,12 +388,12 @@
 
 						<div class="pl-2">
 							<blockquote>
-								"They did a wonderful job with the construction, left the
-								completed offices in neat and clean and were very pleasant to
-								work with."
+								"Thank you for making our construction projects as stress free
+								as possible. Your group of professionals has made our building
+								exactly what we had hoped for. The suggestions and ideas for
+								changes were always appreciated."
 							</blockquote>
 							<h4 class="pt-1">John Doe</h4>
-							<p class="pt-1">Ceo of Mart</p>
 						</div>
 					</div>
 				</article>
@@ -360,7 +401,6 @@
 		</main>
 		<footer class="footer pt-5">
 			<div class="footer--contact flex jc-even m-auto pb-1 pt-1 mb-3">
-				<!-- !TODO LOCATION -->
 				<div>
 					<div class="footer--phone flex ai-c pl-2">
 						<i class="fav--color fas fa-phone-volume fa-2x"></i>
@@ -388,7 +428,7 @@
 			</div>
 			<div class="footer-lists m-auto pb-5">
 				<div class="footer--brand flex f-col">
-					<div class="logo--container">
+					<div>
 						<img
 							class="logo--brand"
 							src="../gallery/logo-white.png"
@@ -431,12 +471,7 @@
 							</li>
 							<li class="pt-1">
 								<a class="link--white" href="about.html"
-									><i class="fas fa-chevron-right"></i> Abut Us</a
-								>
-							</li>
-							<li class="pt-1">
-								<a class="link--white" href="services.html"
-									><i class="fas fa-chevron-right"></i> Services</a
+									><i class="fas fa-chevron-right"></i> About Us</a
 								>
 							</li>
 							<li class="pt-1">

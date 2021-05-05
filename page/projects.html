@@ -67,13 +67,19 @@
 						</div>
 					</div>
 					<button type="button" class="btn--translate btn--en p-05">
-						<img src="../gallery/flags/denmark-flag.png" alt="flag" />
+						<a href="./dk/home.html"
+							><img src="../gallery/flags/denmark-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--dk p-05">
-						<img src="../gallery/flags/germany-flag.png" alt="flag" />
+						<a href="./de/home.html"
+							><img src="../gallery/flags/germany-flag.png" alt="flag"
+						/></a>
 					</button>
 					<button type="button" class="btn--translate btn--gr p-05">
-						<img src="../gallery/flags/uk-flag.png" alt="flag" />
+						<a href="index.html"
+							><img src="../gallery/flags/uk-flag.png" alt="flag"
+						/></a>
 					</button>
 				</div>
 				<div class="background--cover">
@@ -101,9 +107,12 @@
 										<a class="main--nav--a" href="about.html">About Us</a>
 									</li>
 									<li class="list--nav pr-1 drop--menu-a">
-										<a class="main--nav--a" href="services.html"> Services </a>
-										<i class="fas fa-caret-down drop-icon"></i>
-										<ul class="dropdown--menu">
+										<span class="main--nav--a main--nav-dropdown">
+											Services
+											<i class="fas fa-caret-down drop-icon"></i>
+										</span>
+
+										<ul class="dropdown--menu display-none">
 											<li class="dropdown--item flex pl-1 ai-c">
 												<a href="./subpage/architecture-design.html"
 													>Architecture Design</a
@@ -160,7 +169,7 @@
 										alt="logo"
 									/>
 								</div>
-								<div>
+								<div class="sticky--nav-container">
 									<ul class="sticky--navbar flex">
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../index.html">Home</a>
@@ -169,10 +178,50 @@
 											<a class="main--nav--a" href="about.html">About Us</a>
 										</li>
 										<li class="list--nav pr-1">
-											<a class="main--nav--a" href="services.html">Services</a>
-											<i class="fas fa-caret-down drop-icon"></i>
+											<span class="sticky--nav-dropdown main--nav--a"
+												>Services
+												<i class="fas fa-caret-down drop-icon"></i>
+											</span>
+											<ul class="mobile--dropdown">
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-top display-none"
+												>
+													<a href="./subpage/architecture-design.html"
+														>Architecture Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/building-construction.html"
+														>Building Construction</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/flooring-and-roofing.html"
+														>Flooring & Roofing</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/interior-design.html"
+														>Interior & Design</a
+													>
+												</li>
+												<li class="mobile--dropdown-item display-none">
+													<a href="./subpage/renovation.html"
+														>Building Renovation</a
+													>
+												</li>
+												<li
+													class="mobile--dropdown-item mobile--dropdown-item-bottom display-none"
+												>
+													<a
+														class="mobile--dropdown-item-bottom-a"
+														href="./subpage/painting-tiles.html"
+														>Painting & Tiles</a
+													>
+												</li>
+											</ul>
 										</li>
-										<li class="list--nav pr-1">
+										<li class="list--nav list--nav-projects pr-1">
 											<a class="main--nav--a" href="projects.html">Projects</a>
 										</li>
 										<li class="list--nav pr-1">
@@ -193,7 +242,7 @@
 		</header>
 		<main>
 			<div class="section--cover flex f-col jc-c ai-c">
-				<h2 class="mt-3 mb-3 project--header">Projects</h2>
+				<h2 class="mt-2 mb-1 project--header">Projects</h2>
 				<section id="section--1" class="m-auto">
 					<ul class="filter--nav flex jc-c ai-c">
 						<li class="list--item p-05 active" data-name="all">All</li>
@@ -213,7 +262,7 @@
 						<li class="list--item p-05" data-name="renovation">Renovation</li>
 					</ul>
 
-					<div class="gallery flex mt-5">
+					<div class="gallery flex p-1">
 						<div class="img" data-name="architecture">
 							<span class="img--span-1 flex jc-c ai-c"
 								><p>Architecture Design</p></span
@@ -288,7 +337,7 @@
 			</div>
 			<div class="footer-lists m-auto pb-5">
 				<div class="footer--brand flex f-col">
-					<div class="logo--container">
+					<div>
 						<img
 							class="logo--brand"
 							src="../gallery/logo-white.png"
@@ -331,12 +380,7 @@
 							</li>
 							<li class="pt-1">
 								<a class="link--white" href="about.html"
-									><i class="fas fa-chevron-right"></i> Abut Us</a
-								>
-							</li>
-							<li class="pt-1">
-								<a class="link--white" href="services.html"
-									><i class="fas fa-chevron-right"></i> Services</a
+									><i class="fas fa-chevron-right"></i> About Us</a
 								>
 							</li>
 							<li class="pt-1">
