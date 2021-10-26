@@ -18,15 +18,15 @@ new Glide('.glide', {
 }).mount();
 
 const imgs = [
-	`../../gallery/home/background-cover-1.webp`,
-	`../../gallery/home/background-cover-2.webp`,
-	`../../gallery/home/background-cover-3.webp`,
+	`../../construction-site/gallery/home/background-cover-1.webp`,
+	`../../construction-site/gallery/home/background-cover-2.webp`,
+	`../../construction-site/gallery/home/background-cover-3.webp`,
 ];
 
 const imgsVertical = [
-	`../../gallery/home/background-cover-v1.webp`,
-	`../../gallery/home/background-cover-v2.webp`,
-	`../../gallery/home/background-cover-v3.webp`,
+	`../../construction-site/gallery/home/background-cover-v1.webp`,
+	`../../construction-site/gallery/home/background-cover-v2.webp`,
+	`../../construction-site/gallery/home/background-cover-v3.webp`,
 ]
 
 const captions = [
