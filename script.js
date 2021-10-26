@@ -24,6 +24,11 @@ const listNavProjects = document.querySelector(`.list--nav-projects`);
 const dropIcon = document.querySelectorAll(`.drop-icon`);
 const employeeImg = document.querySelectorAll(`.employee--img`);
 const employeeSocial = document.querySelectorAll(`.employee--social`);
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--contact');
+const loader = document.querySelector(`.loader--wrapper`);
 
 AOS.init();
 
@@ -92,3 +97,16 @@ mainNav.addEventListener(`click`, function (e) {
 	});
 	dropDownMenu.classList.toggle(`display-none`);
 });
+
+// Modal window
+
+const openModal = function (e) {
+	e.preventDefault();
+	modal.classList.remove('hidden-modal');
+	overlay.classList.remove('hidden-modal');
+};
+
+const closeModal = function () {
+	modal.classList.add('hidden-modal');
+	overlay.classList.add('hidden-modal');
+};

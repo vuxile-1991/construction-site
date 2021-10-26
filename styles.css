@@ -16,6 +16,7 @@ body {
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
 		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	overflow-x: hidden;
+	background: rgb(239,249,253);
 }
 
 li {
@@ -29,6 +30,97 @@ a {
 
 hr {
 	opacity: 0.5;
+}
+
+/* MODAL WINDOW */
+.modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 60rem;
+	background-color: #f3f3f3;
+	padding: 5rem 6rem;
+	box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+	z-index: 1000;
+	transition: all 0.5s;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(4px);
+	z-index: 100;
+	transition: all 0.5s;
+}
+
+.modal__header {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+	line-height: 1.2;
+}
+
+.btn--close-modal {
+	font-family: inherit;
+	color: inherit;
+	position: absolute;
+	top: 0.5rem;
+	right: 2rem;
+	font-size: 4rem;
+	cursor: pointer;
+	border: none;
+	background: none;
+}
+
+.hidden-modal {
+	visibility: hidden;
+	opacity: 0;
+}
+
+/* *CONTACT FORM */
+label {
+	font-size: 1.3rem;
+	color: var(--dark-blue);
+}
+
+textarea::placeholder,
+input::placeholder {
+	font-size: 1.1rem;
+	color: rgba(7, 13, 61, 0.6);
+}
+
+input {
+	color: var(--dark-blue);
+	width: 100%;
+}
+
+textarea,
+input {
+	font-size: 1.1rem;
+	border: none;
+	/* box-shadow: 0 0 3px var(--dark-blue); */
+	border-radius: 2px;
+	transition: all 0.2s ease-in-out;
+	outline: none;
+	letter-spacing: 2px;
+	line-height: 1.3;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea:focus,
+input:focus {
+	box-shadow: 0 0 5px var(--dark-blue);
+}
+
+/* ---------------------------------- */
+
+.mobile--btn {
+	display: none;
 }
 
 .background {
@@ -66,6 +158,7 @@ hr {
 .top--nav-container {
 	width: 100%;
 	position: relative;
+	background: var(--white);
 }
 
 .sticky--nav {
@@ -271,7 +364,6 @@ footer h4 {
 	color: var(--light-blue);
 }
 .btn--2 {
-	transition: all 0.4s ease ease-out;
 	color: var(--white);
 	border: 3px solid rgb(23, 55, 79);
 	font-family: 'Montserrat', sans-serif;
@@ -280,13 +372,13 @@ footer h4 {
 	background-color: rgb(23, 55, 79);
 	outline: none;
 	border-radius: 30px;
-	transition: background-color 1s;
 }
 
 .btn--2:hover {
-	box-shadow: 1px 1px rgb(23, 55, 79);
-	color: rgb(23, 55, 79);
-	background-color: transparent;
+	transform: scale(1.01) !important;
+	border: 3px solid rgb(21, 56, 86);	
+	background-color: rgb(21, 56, 86);
+	transition: all 0.1s ease-out !important;
 }
 .pointer {
 	cursor: pointer;
@@ -342,9 +434,100 @@ footer h4 {
 	transform: scale(1.05) !important;
 }
 
+.email--input,
+.subject--input {
+	width: 20rem;
+}
+
+.loader--wrapper {
+	background: rgb(255, 255, 255);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	transition: all 0.2s ease-in;
+	z-index: 9999;
+}
+
+.loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.loader img:nth-child(1) {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	animation: rotate 1.8s linear;
+}
+
+.loader img:nth-child(2) {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	/* animation: scaled 1.8s linear; */
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	50% {
+		transform: rotate(-270deg) scale(1.2);
+	}
+
+	100% {
+		transform: rotate(0deg) scale(1);
+	}
+}
+
+@keyframes scaled {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
 /* *Media Queries */
 
 @media screen and (max-width: 1440px) {
+	label {
+		font-size: 1.2rem;
+	}
+
+	textarea::placeholder,
+	input::placeholder {
+		font-size: 1rem;
+	}
+
+	textarea,
+	input {
+		font-size: 1rem;
+		letter-spacing: 2px;
+		line-height: 1.3;
+	}
+
+	.modal__header {
+		font-size: 2.5rem;
+	}
+
+	.modal {
+		max-width: 60rem;
+		padding: 2rem 3rem;
+	}
+
 	.top--nav div:nth-child(2) {
 		margin-right: 5rem;
 	}
@@ -364,6 +547,10 @@ footer h4 {
 	.sticky--container {
 		padding: 1rem;
 		justify-content: space-around !important;
+	}
+
+	.background--cover {
+		background-attachment: scroll !important;
 	}
 
 	.nav--heading {
@@ -554,8 +741,11 @@ footer h4 {
 	}
 
 	.list--nav {
-		box-shadow: 0 4px 2px -2px rgba(28, 173, 218, 0.5);
 		width: 100%;
+	}
+
+	.list--nav:not(:last-child) {
+		box-shadow: 0 4px 2px -2px rgba(28, 173, 218, 0.5);
 	}
 
 	.mobile--dropdown {
@@ -581,10 +771,67 @@ footer h4 {
 		box-shadow: none !important;
 	}
 
+	.mobile--btn {
+		display: block;
+		background: transparent;
+		border: none;
+	}
+
 	.nav--heading {
 		top: 8rem;
 		right: 7rem;
 		width: 30rem;
+	}
+
+	label {
+		padding-bottom: 0rem !important;
+		font-size: 1rem;
+	}
+
+	textarea,
+	input {
+		letter-spacing: 1px;
+		line-height: 1.2;
+	}
+
+	.modal__header {
+		padding-left: 2rem;
+		font-size: 1.5rem;
+	}
+	.modal {
+		max-width: 40rem;
+		max-height: 40rem;
+	}
+
+	.form {
+		padding: 0 2rem;
+	}
+
+	.form div:last-child {
+		margin-top: 1rem;
+	}
+
+	.full--name-input,
+	.email--input,
+	.subject--input,
+	.message--textarea {
+		width: 20rem;
+	}
+
+	.email-input {
+		padding-bottom: 1rem;
+	}
+
+	.email-subject--container {
+		flex-direction: column;
+	}
+
+	.subject-input {
+		padding: 0 !important;
+	}
+
+	.modal--btn--submit {
+		padding: 0.5rem 4rem !important;
 	}
 
 	.catch--contact {
@@ -620,9 +867,6 @@ footer h4 {
 }
 
 @media screen and (max-width: 425px) {
-	.background--cover {
-		background-attachment: scroll !important;
-	}
 	.list--contact {
 		display: none !important;
 	}
@@ -642,6 +886,11 @@ footer h4 {
 		text-align: center;
 	}
 
+	.btn--close-modal {
+		font-size: 3rem;
+		right: 2.5rem;
+	}
+
 	.testimonials {
 		flex-wrap: wrap;
 	}
@@ -653,6 +902,16 @@ footer h4 {
 
 	.footer--contact div {
 		border: none;
+	}
+
+	.footer--phone,
+	.footer--email {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.footer--phone div:last-child {
+		margin-left: 0.5rem !important;
 	}
 
 	.footer-lists {
@@ -682,6 +941,30 @@ footer h4 {
 
 	.copyright > * {
 		padding: 0.5rem;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	label {
+		padding-left: 1rem;
+	}
+	.modal {
+		max-width: 30rem !important;
+	}
+
+	.form {
+		padding: 0;
+	}
+
+	.btn--close-modal {
+		right: 3.5rem;
+	}
+
+	.full--name-input,
+	.email--input,
+	.subject--input,
+	.message--textarea {
+		width: 25rem !important;
 	}
 }
 
@@ -730,6 +1013,19 @@ footer h4 {
 
 	.nav--content {
 		font-size: 1.2rem;
+	}
+
+	.modal__header {
+		padding-top: 2rem;
+		padding-left: 1rem;
+		font-size: 1.5rem;
+	}
+
+	.full--name-input,
+	.email--input,
+	.subject--input,
+	.message--textarea {
+		width: 20rem !important;
 	}
 
 	.catch--bottom h2 {

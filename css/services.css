@@ -5,12 +5,12 @@
 .background--cover {
 	position: relative;
 	height: 40vh;
-	background: url('../gallery/pages/services.png') no-repeat center;
+	background: url('../gallery/pages/services.webp') no-repeat center;
 	background-size: cover;
 }
 
 .section--cover {
-	background: url('../gallery/watermark.png') no-repeat center;
+	background: url('../gallery/watermark.webp') no-repeat center;
 	background-size: cover;
 	width: 100%;
 	height: 100%;
@@ -44,7 +44,7 @@
 }
 
 .catch--parallax {
-	background: url('../gallery/pages/services-catch.png') no-repeat center;
+	background: url('../gallery/pages/services-catch.webp') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 25vh;
@@ -55,6 +55,6 @@
 
 .footer {
 	color: var(--white);
-	background: url('../gallery/pages/services-footer.png') no-repeat center;
+	background: url('../gallery/pages/services-footer.webp') no-repeat center;
 	background-size: cover;
 }

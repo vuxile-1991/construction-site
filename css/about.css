@@ -23,7 +23,7 @@
 .background--cover {
 	position: relative;
 	height: 40vh;
-	background: url('../gallery/pages/about.png') no-repeat center;
+	background: url('../gallery/pages/about.webp') no-repeat center;
 	background-size: cover;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .background--left {
-	background: url('../gallery/normal-cover.png') no-repeat center;
+	background: url('../gallery/normal-cover.webp') no-repeat center;
 	background-size: cover;
 }
 
@@ -56,7 +56,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url('../gallery/black-cover.png') no-repeat center;
+	background: url('../gallery/black-cover.webp') no-repeat center;
 	background-size: cover;
 	z-index: -1;
 }
@@ -74,7 +74,7 @@
 }
 
 .catch--bottom {
-	background: url('../gallery/pages/about-catch.png') no-repeat center;
+	background: url('../gallery/pages/about-catch.webp') no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
@@ -98,7 +98,7 @@
 
 .section-1--img {
 	width: 30rem;
-	box-shadow: 4px 4px 10px -3px var(--violet);
+	box-shadow: 1px 1px 5px -3px var(--violet);
 }
 
 .section-1--img img {
@@ -132,11 +132,15 @@
 	position: relative;
 }
 
+.employee--card-2,
+.employee--card-3 {
+	margin-left: 2rem;
+}
+
 .employee--img {
 	width: 100%;
 	height: 100%;
-	border-radius: 3px;
-	box-shadow: 0 0 5px rgb(0, 0, 0, 0.5);
+
 }
 
 .employee--card::before {
@@ -159,7 +163,8 @@
 .employee--card:hover .employee--social,
 .employee--card:focus .employee--social,
 .employee--card:active .employee--social {
-	transform: translateX(-50%) translateY(0);
+	/* transform: translateX(-50%) translateY(0); */
+	z-index: 1000;
 	visibility: visible;
 }
 
@@ -171,12 +176,17 @@
 
 .employee--social {
 	width: 10rem;
-	left: 50%;
+	left: 25%;
 	top: 0;
-	transform: translateX(-50%) translateY(-5rem);
+	/* transform: translateX(-50%) translateY(-5rem); */
 	visibility: hidden;
 	font-size: 2rem;
-	transition: all 0.8s ease-in-out;
+	transition: all 0.05s ease-in;
+	z-index: -1;
+}
+
+.social_link {
+	color: var(--white);
 }
 
 .employee--social i {
@@ -211,8 +221,13 @@
 
 .footer {
 	color: var(--white);
-	background: url('../gallery/pages/about-footer.png') no-repeat center;
+	background: url('../gallery/pages/about-footer.webp') no-repeat center;
 	background-size: cover;
+}
+
+.email--input,
+.subject--input {
+	width: 20rem;
 }
 
 /* *Media Queries */

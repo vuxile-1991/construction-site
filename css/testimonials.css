@@ -5,8 +5,15 @@
 .background--cover {
 	position: relative;
 	height: 40vh;
-	background: url('../gallery/pages/testimonials.png') no-repeat bottom;
+	background: url('../gallery/pages/testimonials.webp') no-repeat bottom;
 	background-size: cover;
+}
+
+.testimonials--header {
+	width: 14rem;
+	font-size: 2.4rem;
+	border-bottom: 2px solid var(--dark-blue);
+	text-align: center;
 }
 
 .carousel--testimonials {
@@ -23,7 +30,7 @@
 
 .footer {
 	color: var(--white);
-	background: url('../gallery/pages/testimonials-footer.png') no-repeat center;
+	background: url('../gallery/pages/testimonials-footer.webp') no-repeat center;
 	background-size: cover;
 }
 

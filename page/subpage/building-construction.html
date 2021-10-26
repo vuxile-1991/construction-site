@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="We offer our clients direct access to a team of highly qualified and experienced specialists
+		 offering consultancy services in preliminary work, building design as well as construction management and construction supervision.">
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -14,8 +16,7 @@
 		<link rel="stylesheet" href="../../css/utilities.css" />
 		<link rel="stylesheet" href="../../styles.css" />
 		<link rel="stylesheet" href="../../css/subpages.css" />
-		<meta name="description" content="We offer our clients direct access to a team of highly qualified and experienced specialists
-		 offering consultancy services in preliminary work, building design as well as construction management and construction supervision.">
+		<link rel="icon" type="img/webp" href="../../gallery/jb-favicon.webp" />
 		<title>Building Construction</title>
 	</head>
 	<body>
@@ -67,7 +68,7 @@
 							</ul>
 						</div>
 					</div>
-					<button type="button" class="btn--translate btn--en p-05">
+					<!-- <button type="button" class="btn--translate btn--en p-05">
 						<a href="./dk/home.html"
 							><img src="../../gallery/flags/denmark-flag.png" alt="flag"
 						/></a>
@@ -81,7 +82,7 @@
 						<a href="index.html"
 							><img src="../../gallery/flags/uk-flag.png" alt="flag"
 						/></a>
-					</button>
+					</button> -->
 				</div>
 				<div class="background--cover">
 					<nav class="header--nav">
@@ -90,7 +91,7 @@
 								<img
 									id="logo"
 									class="logo--brand"
-									src="../../gallery/logo-white.png"
+									src="../../gallery/logo-white.webp"
 									alt="logo"
 								/>
 							</div>
@@ -147,9 +148,6 @@
 										</ul>
 									</li>
 									<li class="list--nav pr-1">
-										<a class="main--nav--a" href="../projects.html">Projects</a>
-									</li>
-									<li class="list--nav pr-1">
 										<a class="main--nav--a" href="../testimonials.html"
 											>Testimonials</a
 										>
@@ -166,7 +164,7 @@
 									<img
 										id="logo"
 										class="logo--brand"
-										src="../../gallery/logo-white.png"
+										src="../../gallery/logo-white.webp"
 										alt="logo"
 									/>
 								</div>
@@ -222,9 +220,6 @@
 												</li>
 											</ul>
 										</li>
-										<li class="list--nav list--nav-projects pr-1">
-											<a class="main--nav--a" href="../projects.html">Projects</a>
-										</li>
 										<li class="list--nav pr-1">
 											<a class="main--nav--a" href="../testimonials.html"
 												>Testimonials</a
@@ -267,10 +262,10 @@
 									needs analysis, cost estimates, initial design and planning, final design, tender documents, assistance with choosing a contractor and consulting during construction.
 									In the process of work, our team uses its own highly developed database that includes unique prices that cover a wide spectrum of services and materials.
 								</p>	
-								<img data-aos="fade-left" data-aos-duration="2000" class="img img--1 ml-5" src="https://picsum.photos/300/300" alt="img-1" />
+								<img data-aos="fade-left" data-aos-duration="2000" class="img img--1 ml-5" src="../../gallery/subpages/construction.webp" alt="construction-img" />
 									</div>
 									<div class="articles flex pt-2">
-										<img data-aos="fade-right" data-aos-duration="2000" class="img img--2" src="https://picsum.photos/300/300" alt="img-1" />
+										<img data-aos="fade-right" data-aos-duration="2000" class="img img--2" src="../../gallery/subpages/point_plan.webp" alt="point_plan-img" />
 								<p class="sub--p ml-5" data-aos="fade-center" data-aos-duration="2000">The term construction services covers a wide spectrum of tasks and responsibilities in the course of the building process. 
 									From design to completion, there is a plethora of services and parameters that should be taken care of.</p>
 									</div>
@@ -324,7 +319,7 @@
 				<div class="footer-lists m-auto pb-5">
 					<div class="footer--brand flex f-col">
 						<div>
-							<img class="logo--brand" src="../../gallery/logo-white.png" alt="logo" />
+							<img class="logo--brand" src="../../gallery/logo-white.webp" alt="logo" />
 						</div>
 						<p class="slogan pb-1 mt-2">We build your dream house</p>
 						<div class="social--networks flex jc-start mt-2">
@@ -363,11 +358,6 @@
 								<li class="pt-1">
 									<a class="link--white" href="../about.html"
 										><i class="fas fa-chevron-right"></i> About Us</a
-									>
-								</li>
-								<li class="pt-1">
-									<a class="link--white" href="../projects.html"
-										><i class="fas fa-chevron-right"></i> Projects</a
 									>
 								</li>
 								<li class="pt-1">
@@ -437,13 +427,79 @@
 				</div>
 				<div class="copyright--cover">
 					<div class="copyright flex jc-between pt-2 pb-2 m-auto">
-						<small>Copyright &copy; J&B ENTERPRISE. All rights reserved.</small>
+						<small>Copyright &copy; J&B ENTERPRISE 2021. All rights reserved.</small>
 						<small>Created by: Vukašin Milekić & Klikers</small>
 					</div>
 				</div>
 			</footer>
+
+					<!-- MODAL -->
+
+					<div class="modal hidden-modal">
+						<button class="btn--close-modal">&times;</button>
+						<h2 class="modal__header">
+							Contact us  <br />
+							and make an <span class="highlight">appointment</span>
+						</h2>
+						<form class="form flex f-col" method="POST" action="../../php/formPost.php">
+							<div class="full--name-input flex f-col">
+								<label class="pb-1" for="name">Full Name</label>
+								<input
+									class="pt-1 pb-1 pl-1"
+									autocomplete="off"
+									type="text"
+									name="name"
+									placeholder="Enter your Full Name"
+								/>
+							</div>
+							<div class="email-subject--container flex pt-1">
+								<div class="email-input flex f-col pr-05">
+									<label class="pb-1" for="email">Email</label>
+									<input
+										class="email--input pt-1 pb-1 pl-1"
+										autocomplete="off"
+										type="email"
+										name="email"
+										placeholder="Enter your Email"
+									/>
+								</div>
+			
+								<div class="subject-input flex f-col pl-05">
+									<label class="pb-1" for="subject">Subject</label>
+									<input
+										class="subject--input pt-1 pb-1 pl-1"
+										autocomplete="off"
+										type="text"
+										name="subject"
+										placeholder="Enter your Subject"
+									/>
+								</div>
+							</div>
+							<div class="flex f-col pt-1">
+								<label class="pb-1" for="message">Message</label>
+								<textarea
+									class="message--textarea pl-1 pt-1"
+									name="message"
+									id="msg"
+									cols="20"
+									rows="5"
+									placeholder="Enter your Message"
+								></textarea>
+							</div>
+							<div class="flex jc-c mt-2">
+								<button
+									class="modal--btn--submit btn--2 btn--contact pl-4 pr-4 pt-1 pb-1"
+									type="submit"
+								>
+									Submit
+								</button>
+							</div>
+						</form>
+					</div>
+					<div class="overlay hidden-modal"></div>
 		<script src="../../js/aos.js"></script>
 		<script src="../../script.js"></script>
+		<script src="../../js/subpages.js"></script>
 	</body>
 </html>
 

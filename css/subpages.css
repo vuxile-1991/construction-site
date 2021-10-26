@@ -10,7 +10,7 @@
 
 .background--cover {
 	height: 40vh;
-	background: url('../gallery/pages-cover.png') no-repeat center;
+	background: url('../gallery/pages-cover.webp') no-repeat center;
 	background-size: cover;
 }
 
@@ -47,7 +47,7 @@ aside ul li {
 	/* box-shadow: 1px 1px 3px grey; */
 	font-size: 1.2em;
 	cursor: pointer;
-	background-color: var(--white);
+	background-color: rgb(235,247,255);
 	animation-fill-mode: both;
 	height: 3.5rem;
 	width: 100%;
@@ -68,6 +68,11 @@ aside ul li:hover a {
 	color: var(--white);
 }
 
+.img {
+	width: 25rem;
+	height: auto;
+}
+
 .sub--p {
 	font-size: 1.3rem;
 	text-align: left;
@@ -81,8 +86,12 @@ aside ul li:hover a {
 	color: var(--white);
 }
 
+.articles:nth-child(3) {
+	margin-top: 2rem;
+}
+
 .catch--bottom {
-	background: url('../gallery/catch-cover.png') no-repeat center;
+	background: url('../gallery/catch-cover.webp') no-repeat center;
 	background-size: cover;
 	height: 25vh;
 	text-align: center;
@@ -91,13 +100,13 @@ aside ul li:hover a {
 }
 
 .section--cover {
-	background: url('../gallery/watermark.png') no-repeat center;
+	/* background: url('../gallery/watermark.png') no-repeat center; */
 	background-size: cover;
 }
 
 .footer {
 	color: var(--white);
-	background: url('../gallery/pages/about-footer.png') no-repeat center;
+	background: url('../gallery/pages/about-footer.webp') no-repeat center;
 	background-size: cover;
 }
 
